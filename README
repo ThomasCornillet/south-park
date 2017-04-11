@@ -1,0 +1,17 @@
+south_park.py
+=============
+
+Application permettant de sélectionner de manière aléatoire un épisode de South Park.
+
+Premières tâches
+----------------
+- sélectionner la saison de manière aléatoire
+- sélectionner l'épisode de manière aléatoire
+- afficher le numéro de saison et le numéro de l'épisode sélectionné
+
+Tâches à venir
+--------------
+- afficher le nom de l'épisode
+- lancer l'épisode directement via l'application
+	à partir de vlc dans un premier temps
+	puis à partir du lecteur par défaut de l'ordinateur
