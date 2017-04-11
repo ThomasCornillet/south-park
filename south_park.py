@@ -1,17 +1,9 @@
 #!/usr/bin/python3
 # -*-coding:Utf-8 -*
 
-# features à ajouter : rentrer les informations du nombre d'épisodes dans chaque saison pour éviter de demander le nombre d'épisodes
 # raise error si pas d'entier entré
 # gérer le cas où la personne a une saison manquante (du genre 1-5,6-8)
-# peut-être prévoir le cas ou la personne veut une saison en particulier
-
-"""et pour quoi pas poser une dernière question (est-ce que ça vous convient ?) et si oui, lancer directement l'épisode dans vlc
-pour se faire, voir la commande os.popen()
-si je fais ça, il faudrait que je renomme tous les épisodes avec des noms générique
-voir faire une base de données avec les noms des fichiers, et pas besoin de renommer
-enfin une "base de données", faire une fichier csv avec tous les épisodes ? ou un fichier csv par saison ? (ce qui permettrait de connaitre automatiquement le nombre d'épisodes de la saison
-si choix d'un csv, possibilité de mettre un incrémentateur pour pondérer les épisodes enfonction des vues"""
+# ajouter un avertissement en cas de double ou triple épisodes
 
 import saisons
 from random import randint
