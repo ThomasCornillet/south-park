@@ -41,5 +41,5 @@ episode_max = input("Combien d'épisodes contient la saison {} ?".format(saison_
 episode_choix = choix_episode(episode_min,episode_max)
 print("L'application a sélectionné l'épisode : {}\n".format(episode_choix))
 
-print("Vous allé donc regardé l'épisode {} de la saison {} de South Park.\n".format(episode_choix,saison_choix))
+print("Vous allez donc regarder l'épisode {} de la saison {} de South Park.\n".format(episode_choix,saison_choix))
 print("Bon visionnage ;-)")
