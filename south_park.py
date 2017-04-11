@@ -47,7 +47,5 @@ if reponse == 'o':
 	print("Bon visionnage ;-)")
 if reponse == 'n':
 	print("Très bien. Nous allons recommencer le processus de sélection.\n")
-	# prévoir le retour, surement avec des boucles
-#elif
-	# print("Je ne comprends pas votre réponse")
+
 	# prévoir de poser la question à nouveau
