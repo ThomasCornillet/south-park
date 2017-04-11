@@ -1,0 +1,11 @@
+Cette classe regroupe des fichiers csv pour chaque saison de South Park.
+Le csv est simple, 3 colonnes : numéro de l'épisode, nom de l'épisode (en anglais), chemin de l'épisode.
+
+L'idée est d'ajouter pour chaque ordinateur le chemin spécifique de l'épisode pour l'ouvrire dans l'application.
+
+---
+
+This class gather csv files for each season of South Park.
+The csv files are simple, 3 columns : No. (in season), title, episode's path.
+
+The idea is to complete every paths for every computer, with the specific path for the episode to open it in the app.
