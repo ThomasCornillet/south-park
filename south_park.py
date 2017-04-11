@@ -16,7 +16,7 @@ enfin une "base de données", faire une fichier csv avec tous les épisodes ? ou
 from random import randint
 from subprocess import Popen
 
-print("Bienvenue de la sélection aléatoire d'un épisode de South Park\n")
+print("Bienvenue dans la sélection aléatoire d'un épisode de South Park\n")
 print("Nous allons tout d'abord sélectionner une saison, puis un épisode dans cette saison.\n")
 
 def choix_saison(a,b):
