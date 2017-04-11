@@ -13,6 +13,7 @@ voir faire une base de données avec les noms des fichiers, et pas besoin de ren
 enfin une "base de données", faire une fichier csv avec tous les épisodes ? ou un fichier csv par saison ? (ce qui permettrait de connaitre automatiquement le nombre d'épisodes de la saison
 si choix d'un csv, possibilité de mettre un incrémentateur pour pondérer les épisodes enfonction des vues"""
 
+import saisons
 from random import randint
 from subprocess import Popen
 
