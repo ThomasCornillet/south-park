@@ -22,30 +22,35 @@ def choix_episode(c,d):
 	d = int(d)
 	return randint(c,d)
 
-print("Sélection de la saison")
-saison_min = 2
-saison_max = 1
-while saison_min >= saison_max:
-	saison_min = input("Quelle est la première saison à votre disposition ?")
-	saison_max = input("Quelle est la dernière saison à votre disposition ?")
-	if saison_min >= saison_max:
-		print("Une erreur est survenue. Le n° de la première saison est supérieur à celui de la dernière.")
-	else:
-		saison_choix = choix_saison(saison_min,saison_max)
-print("L'application a sélectionné la saison : {}\n".format(saison_choix))
+reponse = 'n'
 
-print("Sélection de l'épisode")
-episode_min = 1
-episode_max = input("Combien d'épisodes contient la saison {} ?".format(saison_choix))
-episode_choix = choix_episode(episode_min,episode_max)
-print("L'application a sélectionné l'épisode : {}\n".format(episode_choix))
+while reponse == 'n':
+	print("Sélection de la saison")
+	saison_min = 2
+	saison_max = 1
+	while saison_min >= saison_max:
+		saison_min = input("Quelle est la première saison à votre disposition ?")
+		# Raise Error si pas int
+		saison_max = input("Quelle est la dernière saison à votre disposition ?")
+		# Raise Error si pas int
+		if saison_min >= saison_max:
+			print("Une erreur est survenue. Le n° de la première saison est supérieur à celui de la dernière.")
+		else:
+			saison_choix = choix_saison(saison_min,saison_max)
+	print("L'application a sélectionné la saison : {}\n".format(saison_choix))
 
-print("Vous vous apprêtez à regarder l'épisode {} de la saison {} de South Park.".format(episode_choix,saison_choix))
-reponse = input("Cela vous convient-il ? o/n") #prévoir les majuscules
-if reponse == 'o':
-	print("L'épisode va se lancer.\n")
-	print("Bon visionnage ;-)")
-if reponse == 'n':
-	print("Très bien. Nous allons recommencer le processus de sélection.\n")
+	print("Sélection de l'épisode")
+	episode_min = 1
+	episode_max = input("Combien d'épisodes contient la saison {} ?".format(saison_choix))
+	episode_choix = choix_episode(episode_min,episode_max)
+	print("L'application a sélectionné l'épisode : {}\n".format(episode_choix))
+
+	print("Vous vous apprêtez à regarder l'épisode {} de la saison {} de South Park.".format(episode_choix,saison_choix))
+	reponse = input("Cela vous convient-il ? o/n") #prévoir les majuscules
+	if reponse == 'o':
+#		print("L'épisode va se lancer.\n")
+		print("Bon visionnage ;-)")
+	if reponse == 'n':
+		print("Très bien. Nous allons recommencer le processus de sélection.\n")
 
 	# prévoir de poser la question à nouveau
