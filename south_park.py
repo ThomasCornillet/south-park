@@ -52,5 +52,3 @@ while reponse == 'n':
 		print("Bon visionnage ;-)")
 	if reponse == 'n':
 		print("Très bien. Nous allons recommencer le processus de sélection.\n")
-
-	# prévoir de poser la question à nouveau
