@@ -6,6 +6,7 @@
 # ajouter un avertissement en cas de double ou triple épisodes
 
 import saisons
+import os
 from random import randint
 from subprocess import Popen
 
@@ -52,3 +53,5 @@ while reponse == 'n':
 		print("Bon visionnage ;-)")
 	if reponse == 'n':
 		print("Très bien. Nous allons recommencer le processus de sélection.\n")
+
+os.system("pause") #à activer sous windows

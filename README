@@ -15,3 +15,7 @@ Tâches à venir
 - lancer l'épisode directement via l'application
 	à partir de vlc dans un premier temps
 	puis à partir du lecteur par défaut de l'ordinateur
+
+Modifications envisagées
+------------------------
+- passer les fichiers des saisons de .csv à .INI
