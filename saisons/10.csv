@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN
-01,"The Return of Chef"
-02,"Smug Alert!"
-03,"Cartoon Wars Part I"
-04,"Cartoon Wars Part II"
-05,"A Million Little Fibers"
-06,"ManBearPig"
-07,"Tsst"
-08,"Make Love, Not Warcraft"
-09,"Mystery of the Urinal Deuce"
-10,"Miss Teacher Bangs a Boy"
-11,"Hell on Earth 2006"
-12,"Go God Go"
-13,"Go God Go XII"
-14,"Stanley's Cup"
+NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE,PATH
+01,"The Return of Chef",,False,0,,
+02,"Smug Alert!",,False,0,,
+03,"Cartoon Wars Part I",,True,0,,
+04,"Cartoon Wars Part II",,True,0,,
+05,"A Million Little Fibers",,False,0,,
+06,"ManBearPig",,False,0,,
+07,"Tsst",,False,0,,
+08,"Make Love, Not Warcraft",,False,0,,
+09,"Mystery of the Urinal Deuce",,False,0,,
+10,"Miss Teacher Bangs a Boy",,False,0,,
+11,"Hell on Earth 2006",,False,0,,
+12,"Go God Go",,True,0,,
+13,"Go God Go II",,True,0,,
+14,"Stanley's Cup",,False,0,,
