@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN
-01,"It Hits the Fan"
-02,"Cripple Fight"
-03,"Super Best Friends"
-04,"Scott Tenorman Must Die"
-05,"Terrance and Phillip: Behind the Blow"
-06,"Cartmanland"
-07,"Proper Condom Use"
-08,"Towelie"
-09,"Osama bin Laden Has Farty Pants"
-10,"How to Eat with Your Butt"
-11,"The Entity"
-12,"Here Comes the Neighborhood"
-13,"Kenny Dies"
-14,"Butters' Very Own Episode"
+NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE,PATH
+01,"It Hits the Fan",,False,0,,
+02,"Cripple Fight",,False,0,,
+03,"Super Best Friends",,False,0,,
+04,"Scott Tenorman Must Die",,False,0,,
+05,"Terrance and Phillip: Behind the Blow",,False,0,,
+06,"Cartmanland",,False,0,,
+07,"Proper Condom Use",,False,0,,
+08,"Towelie",,False,0,,
+09,"Osama bin Laden Has Farty Pants",,False,0,,
+10,"How to Eat with Your Butt",,False,0,,
+11,"The Entity",,False,0,,
+12,"Here Comes the Neighborhood",,False,0,,
+13,"Kenny Dies",,False,0,,
+14,"Butters' Very Own Episode",,False,0,,

@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN
-01,"Tonsil Trouble"
-02,"Britney's New Look"
-03,"Major Boobage"
-04,"Canada on Strike"
-05,"Eek, a Penis!"
-06,"Over Logging"
-07,"Super Fun Time"
-08,"The China Probrem"
-09,"Breast Cancer Show Ever"
-10,"Pandemic"
-11,"Pandemic 2: The Startling"
-12,"About Last Night..."
-13,"Elementary School Musical"
-14,"The Ungroundable"
+NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE,PATH
+01,"Tonsil Trouble",,False,0,,
+02,"Britney's New Look",,False,0,,
+03,"Major Boobage",,False,0,,
+04,"Canada on Strike",,False,0,,
+05,"Eek, a Penis!",,False,0,,
+06,"Over Logging",,False,0,,
+07,"Super Fun Time",,False,0,,
+08,"The China Probrem",,False,0,,
+09,"Breast Cancer Show Ever",,False,0,,
+10,"Pandemic",,True,0,,
+11,"Pandemic 2: The Startling",,True,0,,
+12,"About Last Night...",,False,0,,
+13,"Elementary School Musical",,False,0,,
+14,"The Ungroundable",,False,0,,
