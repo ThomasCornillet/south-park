@@ -3,11 +3,13 @@
 
 """
 
-Problème de formatage du nom de l'épisode, mais sinon ça fonctionne.
+Bugs en cours : 
+	- formatage du nom de l'épisode
+	- le cas des double ou triologie
 
 """
 
-import saisons
+import saisons # je ne suis pas sur que ça serve à quelque chose... (en tout cas, ça n'empêche pas de devoir faire un os.chdir() pour rentrer dans le dossier saisons
 import os
 import csv
 from random import randint
@@ -79,13 +81,59 @@ while reponse == 'n':
 		ligne = fichier.readlines()
 		ligne_episode = str(ligne[episode])
 		ligne_episode = ligne_episode.split(",")
-		nom_episode = ligne_episode[1] # il y a un problème de formatage du nom, des '\' aparaissent. Il doit y avoir un moyen de les supprimers en parcourant la chaine)
+		nom_episode = ligne_episode[1]
+
+	print("L'application a défini l'épisode {}, n°{}, de la saison {}\n".format(nom_episode,episode,season))
+	
+	
+	# prévoir s'il n'y a pas de ant, ant2, apr, apr2
 
 	
-	print("L'application a définie l'épisode {}, n°{}, de la saison {}".format(nom_episode,episode,season))
+	double = ligne_episode[3]
+	# on charge la ligne de l'épisode antérieur
+	ep_ant = episode - 1
+	ligne_ep_ant = str(ligne[ep_ant])
+	ligne_ep_ant = ligne_ep_ant.split(",")
+	double_ant = ligne_ep_ant[3]
+	# on charge la ligne de l'épisode antérieur à l'épisode antérieur
+	ep_ant2 = ep_ant - 1
+	ligne_ep_ant2 = str(ligne[ep_ant2])
+	ligne_ep_ant2 = ligne_ep_ant2.split(",")
+	double_ant2 = ligne_ep_ant2[3]
+	# on charge donc l'épisode d'après
+	ep_apr = episode + 1
+	ligne_ep_apr = str(ligne[ep_apr])
+	ligne_ep_apr = ligne_ep_apr.split(",")
+	double_apr = ligne_ep_apr[3]
+	# on charge la ligne de l'épisode encore d'après
+	ep_apr2 = episode + 2
+	ligne_ep_apr2 = str(ligne[ep_apr2])
+	ligne_ep_apr2 = ligne_ep_apr2.split(",")
+	double_apr2 = ligne_ep_apr2[3]
+	
+	# on vérifie si l'épisode n'est pas dans un arc narratif
+	if double == "True":
+		print("Attention, l'épisode sélectionné fait partir d'un arc narratif")
+		
+		# on vérifie s'il s'agit d'un double épisode ou d'une trilogie
+		if double_ant2 == "True":
+			print("Il s'agit du dernier épisode d'une \"trilogie\".\n")
+			# pass
+		if double_apr2 == "True":
+			print("Il s'agit du premier épisode d'une \"trilogie\".\n")
+			# pass
+		if double_ant == "True" and double_apr == "True":
+			print("Il s'agit du deuxième épisode d'une \"trilogie\".\n")
+			# pass
+		if double_ant == "False" and double_apr2 == "False":
+			print("Il s'agit de la première partie d'un double épisode\n")
+			# pass
+		if double_apr == "False" and double_ant2 == "False":
+			print("Il s'agit de la deuxième partie d'un double épisode\n")
+			# pass"
+
 	fichier.close()
 	
-	
-	reponse = input("Cela vous convient-il ? o/n") #prévoir les majuscules
+	reponse = input("Cela vous convient-il ? o/n") #prévoir les majuscules e autres caractères
 
 print("\nBon visionnage ;-)")
