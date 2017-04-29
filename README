@@ -8,14 +8,17 @@ Premières tâches
 - sélectionner la saison de manière aléatoire
 - sélectionner l'épisode de manière aléatoire
 - afficher le numéro de la saison et le numéro de l'épisode sélectionné
+- afficher le nom de l'épisode
 
 Tâches à venir
 --------------
-- afficher le nom de l'épisode
+- afficher un avertissement en cas de double ou triple épisode
+- si double ou triple épisode, affichage des liens entre épisodes
 - lancer l'épisode directement via l'application
 	à partir de vlc dans un premier temps
 	puis à partir du lecteur par défaut de l'ordinateur
 
 Modifications envisagées
 ------------------------
-- passer les fichiers des saisons de .csv à .INI
+- refonte du code avec ajout d'une classe "méthodes de sélection"
+- passer en graphique
