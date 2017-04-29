@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE,PATH
-01,"With Apologies to Jesse Jackson",,False,0,,
-02,"Cartman Sucks",,False,0,,
-03,"Lice Capades",,False,0,,
-04,"The Snuke",,False,0,,
-05,"Fantastic Easter Special",,False,0,,
-06,"D-Yikes!",,False,0,,
-07,"Night of the Living Homeless",,False,0,,
-08,"Le Petit Tourette",,False,0,,
-09,"More Crap",,False,0,,
-10,"Imaginationland Episode I",,True,0,,
-11,"Imaginationland Episode II",,True,0,,
-12,"Imaginationland Episode III",,True,0,,
-13,"Guitar Queer-O",,False,0,,
-14,"The List",,False,0,,
+NUM_EP,NOM_EP,CHEMIN
+01,"With Apologies to Jesse Jackson"
+02,"Cartman Sucks"
+03,"Lice Capades"
+04,"The Snuke"
+05,"Fantastic Easter Special"
+06,"D-Yikes!"
+07,"Night of the Living Homeless"
+08,"Le Petit Tourette"
+09,"More Crap"
+10,"Imaginationland Episode I"
+11,"Imaginationland Episode II"
+12,"Imaginationland Episode III"
+13,"Guitar Queer-O"
+14,"The List"

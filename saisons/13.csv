@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE,PATH
-01,"The Ring",,False,0,,
-02,"The Coon",,False,0,,
-03,"Margaritaville",,False,0,,
-04,"Eat, Pray, Queef",,False,0,,
-05,"Fishsticks",,False,0,,
-06,"Pinewood Derby",,False,0,,
-07,"Fatbeard",,False,0,,
-08,"Dead Celebrities",,False,0,,
-09,"Butters' Bottom Bitch",,False,0,,
-10,"W.T.F.",,False,0,,
-11,"Whale Whores",,False,0,,
-12,"The F Word",,False,0,,
-13,"Dances with Smurfs",,False,0,,
-14,"Pee",,False,0,,
+NUM_EP,NOM_EP,CHEMIN
+01,"The Ring"
+02,"The Coon"
+03,"Margaritaville"
+04,"Eat, Pray, Queef"
+05,"Fishsticks"
+06,"Pinewood Derby"
+07,"Fatbeard"
+08,"Dead Celebrities"
+09,"Butters' Bottom Bitch"
+10,"W.T.F."
+11,"Whale Whores"
+12,"The F Word"
+13,"Dances with Smurfs"
+14,"Pee"
