@@ -3,9 +3,10 @@
 
 """
 
-Initialisation de la v2 sur la branche master
-	- idée de faire une version plus "light"
-	- on ne laisse plus que la première méthode
+Ceci est la v2.0
+
+Il s'agit de la version de la v2 avec des fichiers csv
+Les prochaines versions auront des fichiers ini
 
 
 Bugs en cours : 
