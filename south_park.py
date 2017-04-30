@@ -83,7 +83,13 @@ while reponse == 'n':
 		ligne_episode = ligne_episode.split(",")
 		nom_episode = ligne_episode[1]
 
-	print("L'application a défini l'épisode {}, n°{}, de la saison {}\n".format(nom_episode,episode,season))
+	print("L'application a défini l'épisode {}, n°{}/{}, de la saison {}\n".format(nom_episode,episode,nb_episodes,season))
+	
+	nb_vues = int(ligne_episode[4])
+	if nb_vues == 0:
+		print("Vous n'avez pas encore vu cet épisode.\n")
+	else:
+		print("Vous avez déjà vu cet épisode {} fois\n".format(nb_vues))
 	
 	# on veut tester maintenant si l'épisode se trouve dans un arc narratif
 	
@@ -236,6 +242,6 @@ while reponse == 'n':
 	
 	fichier.close()
 	
-	reponse = input("Cela vous convient-il ? o/n") #prévoir les majuscules e autres caractères
+	reponse = input("Cela vous convient-il ? o/n\n") #prévoir les majuscules e autres caractères
 
 print("\nBon visionnage ;-)")
