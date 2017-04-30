@@ -3,7 +3,16 @@
 
 """
 
-Bugs en cours : 
+Ceci est la première version de l'application.
+
+Elle n'est pas tout à fait stable (voir bugs connus), mais elle fonctionne.
+
+Je fais une branche pour avoir une sauvegarde de cette version. 
+La prochaine version ne fera pas l'objet d'une branche mais sera développé dans master.
+Elle ne proposera plus le choix de la méthode de sélection, assumant que l'utilisateur-rice possède toutes les saisons et tous les épisodes.
+
+
+Bugs connus : 
 	- formatage du nom de l'épisode
 	- si les noms d'épisodes contiennent des virgules ','
 		mauvais split pour ligne_episode
