@@ -3,17 +3,20 @@ south_park.py
 
 Application permettant de sélectionner de manière aléatoire un épisode de South Park.
 
-Premières tâches
-----------------
+Tâches 
+------
 - sélectionner la saison de manière aléatoire
 - sélectionner l'épisode de manière aléatoire
 - afficher le numéro de la saison et le numéro de l'épisode sélectionné
 - afficher le nom de l'épisode
+- afficher un avertissement en cas de double ou triple épisode
+- si arc narratif, affichage de la place de l'épisode dans l'arc
+- afficher le nombre de vue
 
 Tâches à venir
 --------------
-- afficher un avertissement en cas de double ou triple épisode
-- si double ou triple épisode, affichage des liens entre épisodes
+- incrémenter le nombre de vue
+- ajouter la date dans la variable dernière vue du csv
 - lancer l'épisode directement via l'application
 	à partir de vlc dans un premier temps
 	puis à partir du lecteur par défaut de l'ordinateur
