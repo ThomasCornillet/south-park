@@ -5,10 +5,11 @@
 
 Initialisation de la v2.1 sur la branche master
 	- passage des fichiers csv à des fichiers ini
+		pour le fait avec un script, je vais d'abord modifier les spéarateurs des csv, passant de "," à ";"
+			ce qui reglera le bug
 
 
 Bugs en cours : 
-	- formatage du nom de l'épisode
 	- si les noms d'épisodes contiennent des virgules ','
 		mauvais split pour ligne_episode
 
@@ -18,7 +19,7 @@ import saisons # je ne suis pas sur que ça serve à quelque chose... (en tout c
 import os
 import csv
 from random import randint
-from subprocess import Popen
+from subprocess import Popen # je ne m'en sers pas encore, c'est pour l'ouverture automatique du fichier
 
 print("\nBienvenue dans la sélection aléatoire d'un épisode de South Park\n")
 print("L'application va définir aléatoirement un épisode.\n")
@@ -34,7 +35,7 @@ while reponse == 'n':
 	saison = saison + ".csv"
 	path = "/home/thomas/Data/Python/South Park/saisons"
 	os.chdir(path)
-	fichier = open(saison, "rb") # penser à os.chdir(./saisons), mais le "./" n'est pas reconnu pas Python...
+	fichier = open(saison, "r") # penser à os.chdir(./saisons), mais le "./" n'est pas reconnu pas Python...
 	ligne = fichier.readlines()
 	fichier.close()
 	nb_episodes = len(ligne) - 1
