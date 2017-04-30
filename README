@@ -3,6 +3,15 @@ south_park.py
 
 Application permettant de sélectionner de manière aléatoire un épisode de South Park.
 
+La branche v1 représente la première version de l'application.
+Elle n'est pas tout à fait stable :
+	- mauvais split si le nom de l'épisode contient une virgule ','
+	- le formatage du nom de l'épisode avec readlines() pose problème
+
+La branche master contient donc la v2 en cours d'évolution
+	- plus que la première méthode de sélection aléatoire
+
+
 Tâches 
 ------
 - sélectionner la saison de manière aléatoire
