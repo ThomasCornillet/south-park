@@ -3,6 +3,11 @@
 
 """
 
+Initialisation de la v2 sur la branche master
+	- idée de faire une version plus "light"
+	- on ne laisse plus que la première méthode
+
+
 Bugs en cours : 
 	- formatage du nom de l'épisode
 	- si les noms d'épisodes contiennent des virgules ','
@@ -16,93 +21,28 @@ import csv
 from random import randint
 from subprocess import Popen
 
-print("Bienvenue dans la sélection aléatoire d'un épisode de South Park\n")
-print("Deux façons de l'utiliser : ")
-print("    - (1) l'application définit directement un épisode")
-print("    - (2) vous indiquez d'abord de combien de saisons vous disposez, puis le nombre d'épisodes dans la saison définie par l'application\n")
+print("\nBienvenue dans la sélection aléatoire d'un épisode de South Park\n")
+print("L'application va définir aléatoirement un épisode.\n")
 
-choix = input("De quelle façon voulez-vous utiliser l'application ? (1/2)\n")
-while choix != '1' and choix != '2':
-	print("Je ne comprends pas.")
-	print("Veuillez entrer 1 ou 2\n")
-	choix = input("De quelle façon voulez-vous utiliser l'application ? (1/2)\n")
-choix = int(choix)
 reponse = 'n'
 while reponse == 'n':
-	if choix == 1:
-		saison = str(randint(1,20))
-		season = int(saison)
-		if len(saison) == 1:
-			saison = '0' + saison
-		else:
-			saison = saison
-		saison = saison + ".csv"
-		path = "/home/thomas/Data/Python/South Park/saisons"
-		os.chdir(path)
-		fichier = open(saison, "rb") # penser à os.chdir(./saisons), mais le "./" n'est pas reconnu pas Python...
-		ligne = fichier.readlines()
-		fichier.close()
-		nb_episodes = len(ligne) - 1
-		episode = randint(1,nb_episodes)
-		ligne_episode = str(ligne[episode])
-		ligne_episode = ligne_episode.split(",")
-		nom_episode = ligne_episode[1] 
+	saison = str(randint(1,20))
+	season = int(saison)
+	if len(saison) == 1:
+		saison = '0' + saison
 	else:
-		print("\nNous allons tout d'abord sélectionner une saison, puis un épisode dans cette saison.\n")
-		def choix_saison(a,b):
-			a = int(a)
-			b = int(b)
-			return randint(a,b)
-		def choix_episode(c,d):
-			c = int(c)
-			d = int(d)
-			return randint(c,d)
-			
-		print("Sélection de la saison")
-		saison_min = input("Quelle est la première saison à votre disposition ?\n")
-		while saison_min != '1' and saison_min != '2' and saison_min != '3' and saison_min != '4' and saison_min != '5' and saison_min != '6' and saison_min != '7' and saison_min != '8' and saison_min != '9' and saison_min != '10' and saison_min != '11' and saison_min != '12' and saison_min != '13' and saison_min != '14' and saison_min != '15' and saison_min != '16' and saison_min != '17' and saison_min != '18' and saison_min != '19' and saison_min != '20':
-			print("Je ne comprends pas.")
-			print("Veuillez entrer un numéro de saison valide, de 1 à 20")
-			saison_min = input("Quelle est la première saison à votre disposition ?\n")
-		saison_max = input("Quelle est la dernière saison à votre disposition ?")
-		while saison_max != '1' and saison_max != '2' and saison_max != '3' and saison_max != '4' and saison_max != '5' and saison_max != '6' and saison_max != '7' and saison_max != '8' and saison_max != '9' and saison_max != '10' and saison_max != '11' and saison_max != '12' and saison_max != '13' and saison_max != '14' and saison_max != '15' and saison_max != '16' and saison_max != '17' and saison_max != '18' and saison_max != '19' and saison_max != '20':
-			print("Je ne comprends pas.")
-			print("Veuillez entrer un numéro de saison valide, de 1 à 20")
-			saison_max = input("Quelle est la dernière saison à votre disposition ?")
-		season = choix_saison(saison_min,saison_max)
-		print("L'application a sélectionné la saison : {}\n".format(season))
-	
-		print("Sélection de l'épisode")	
-		episode_min = 1
-		path = "/home/thomas/Data/Python/South Park/saisons"
-		os.chdir(path)
-		saison = str(season)
-		if len(saison) == 1:
-			saison = '0' + saison
-		else:
-			saison = saison			
-		saison = saison + ".csv"
-		fichier = open(saison, "rb")
-		ligne = fichier.readlines()
-		fichier.close()
-		episode_max = len(ligne) - 1
-		episode = choix_episode(episode_min,episode_max)
-		print("L'application a sélectionné l'épisode : {}\n".format(episode))
-		saison = str(season)
-		if len(saison) == 1:
-			saison = '0' + saison
-		else:
-			saison = saison			
-		saison = saison + ".csv"
-		path = "/home/thomas/Data/Python/South Park/saisons"
-		os.chdir(path)
-		fichier = open(saison, "rb") # penser à os.chdir(./saisons), mais le "./" n'est pas reconnu pas Python...
-		ligne = fichier.readlines()
-		fichier.close()
-		nb_episodes = len(ligne) - 1
-		ligne_episode = str(ligne[episode])
-		ligne_episode = ligne_episode.split(",")
-		nom_episode = ligne_episode[1]
+		saison = saison
+	saison = saison + ".csv"
+	path = "/home/thomas/Data/Python/South Park/saisons"
+	os.chdir(path)
+	fichier = open(saison, "rb") # penser à os.chdir(./saisons), mais le "./" n'est pas reconnu pas Python...
+	ligne = fichier.readlines()
+	fichier.close()
+	nb_episodes = len(ligne) - 1
+	episode = randint(1,nb_episodes)
+	ligne_episode = str(ligne[episode])
+	ligne_episode = ligne_episode.split(",")
+	nom_episode = ligne_episode[1] 
 
 	print("L'application a sélectionné l'épisode {}, n°{}/{}, de la saison {}\n".format(nom_episode,episode,nb_episodes,season))
 	
