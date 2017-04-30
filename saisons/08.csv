@@ -1,15 +1,15 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE
-01,"Good Times with Weapons",,False,0,
-02,"Up the Down Steroid",,False,0,
-03,"The Passion of the Jew",,False,0,
-04,"You Got F'd in the A",,False,0,
-05,"Awesom-O",,False,0,
-06,"The Jeffersons",,False,0,
-07,"Goobacks",,False,0,
-08,"Douche and Turd",,False,0,
-09,"Something Wall-Mart This Way Comes",,False,0,
-10,"Pre-School",,False,0,
-11,"Quest for Ratings",,False,0,
-12,"Stupid Spoiled Whore Video Playset",,False,0,
-13,"Cartman's Incredible Gift",,False,0,
-14,"Woodland Critter Christmas",,False,0,
+NUM_EP;NOM_EP;CHEMIN;DOUBLE;NB_VUES;DERNIERE_VUE
+01;"Good Times with Weapons";;False;0;
+02;"Up the Down Steroid";;False;0;
+03;"The Passion of the Jew";;False;0;
+04;"You Got F'd in the A";;False;0;
+05;"Awesom-O";;False;0;
+06;"The Jeffersons";;False;0;
+07;"Goobacks";;False;0;
+08;"Douche and Turd";;False;0;
+09;"Something Wall-Mart This Way Comes";;False;0;
+10;"Pre-School";;False;0;
+11;"Quest for Ratings";;False;0;
+12;"Stupid Spoiled Whore Video Playset";;False;0;
+13;"Cartman's Incredible Gift";;False;0;
+14;"Woodland Critter Christmas";;False;0;

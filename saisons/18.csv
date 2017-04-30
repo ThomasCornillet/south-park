@@ -1,11 +1,11 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE
-01,"Go Fund Yourself",,False,0,
-02,"Gluten Free Ebola",,False,0,
-03,"The Cissy",,False,0,
-04,"Handicar",,False,0,
-05,"The Magic Bush",,False,0,
-06,"Freemium Isn't Free",,False,0,
-07,"Grounded Vindaloop",,False,0,
-08,"Cock Magic",,False,0,
-09,"#REHASH",,True,0,
-10,"#HappyHolograms",,True,0,
+NUM_EP;NOM_EP;CHEMIN;DOUBLE;NB_VUES;DERNIERE_VUE
+01;"Go Fund Yourself";;False;0;
+02;"Gluten Free Ebola";;False;0;
+03;"The Cissy";;False;0;
+04;"Handicar";;False;0;
+05;"The Magic Bush";;False;0;
+06;"Freemium Isn't Free";;False;0;
+07;"Grounded Vindaloop";;False;0;
+08;"Cock Magic";;False;0;
+09;"#REHASH";;True;0;
+10;"#HappyHolograms";;True;0;

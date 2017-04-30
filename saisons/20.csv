@@ -1,11 +1,11 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE
-01,"Member Berries",,False,0,
-02,"Skank Hunt",,False,0,
-03,"The Damned",,False,0,
-04,"Wieners Out",,False,0,
-05,"Douche and a Danish",,False,0,
-06,"Fort Collins",,False,0,
-07,"Oh, Jeez",,False,0,
-08,"Members Only",,False,0,
-09,"Not Funny",,False,0,
-10,"The End of Serialization as We Know It",,False,0,
+NUM_EP;NOM_EP;CHEMIN;DOUBLE;NB_VUES;DERNIERE_VUE
+1;"Member Berries";;False;0;
+2;"Skank Hunt";;False;0;
+3;"The Damned";;False;0;
+4;"Wieners Out";;False;0;
+5;"Douche and a Danish";;False;0;
+6;"Fort Collins";;False;0;
+7;"Oh, Jeez";;False;0;
+8;"Members Only";;False;0;
+9;"Not Funny";;False;0;
+10;"The End of Serialization as We Know It";;False;0;

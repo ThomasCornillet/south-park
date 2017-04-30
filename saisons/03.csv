@@ -1,18 +1,18 @@
-NUM_EP,NOM_EP,CHEMIN,DOUBLE,NB_VUES,DERNIERE_VUE
-01,"Rainforest Shmainforest",,False,0,
-02,"Spontaneous Combustion",,False,0,
-03,"The Succubus",,False,0,
-04,"Jakovasaurs",,False,0,
-05,"Tweek vs. Craig",,False,0,
-06,"Sexual Harassment Panda",,False,0,
-07,"Cat Orgy",,True,0,
-08,"Two Guys Naked in a Hot Tub",,True,0,
-09,"Jewbilee",,True,0,
-10,"Korn's Groovy Pirate Ghost Mystery",,False,0,
-11,"Chinpokomon",,False,0,
-12,"Hooked on Monkey Fonics",,False,0,
-13,"Starvin' Marvin in Space",,False,0,
-14,"The Red Badge of Gayness",,False,0,
-15,"Mr. Hankey's Christmas Classics",,False,0,
-16,"Are You There God? It's Me, Jesus",,False,0,
-17,"World Wide Recorder Concert",,False,0,
+NUM_EP;NOM_EP;CHEMIN;DOUBLE;NB_VUES;DERNIERE_VUE
+01;"Rainforest Shmainforest";;False;0;
+02;"Spontaneous Combustion";;False;0;
+03;"The Succubus";;False;0;
+04;"Jakovasaurs";;False;0;
+05;"Tweek vs. Craig";;False;0;
+06;"Sexual Harassment Panda";;False;0;
+07;"Cat Orgy";;True;0;
+08;"Two Guys Naked in a Hot Tub";;True;0;
+09;"Jewbilee";;True;0;
+10;"Korn's Groovy Pirate Ghost Mystery";;False;0;
+11;"Chinpokomon";;False;0;
+12;"Hooked on Monkey Fonics";;False;0;
+13;"Starvin' Marvin in Space";;False;0;
+14;"The Red Badge of Gayness";;False;0;
+15;"Mr. Hankey's Christmas Classics";;False;0;
+16;"Are You There God? It's Me, Jesus";;False;0;
+17;"World Wide Recorder Concert";;False;0;
