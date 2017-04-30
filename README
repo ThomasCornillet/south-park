@@ -8,8 +8,11 @@ Elle n'est pas tout à fait stable :
 	- mauvais split si le nom de l'épisode contient une virgule ','
 	- le formatage du nom de l'épisode avec readlines() pose problème
 
-La branche master contient donc la v2 en cours d'évolution
+La branche v2.0 représente la version de la v2 avec des fichiers csv
+
+La branche master contient donc la v2.1 en cours d'évolution
 	- plus que la première méthode de sélection aléatoire
+	- passage des fichiers csv à des fichiers ini
 
 
 Tâches 

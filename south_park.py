@@ -3,9 +3,8 @@
 
 """
 
-Initialisation de la v2 sur la branche master
-	- idée de faire une version plus "light"
-	- on ne laisse plus que la première méthode
+Initialisation de la v2.1 sur la branche master
+	- passage des fichiers csv à des fichiers ini
 
 
 Bugs en cours : 
