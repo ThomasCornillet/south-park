@@ -38,6 +38,11 @@ Modifications envisagées
 - refonte du code avec ajout d'une classe "méthodes de sélection"
 - passer en graphique
 
-Passage des csv aux ini
------------------------
-- voir ./saisons/csvtoini.py
+Automatisation
+--------------
+- passage des csv aux ini
+	voir /saisons/csvtoini.py
+- modifier toutes les nb_vues
+	voir /saison/modif_nb_vues.py
+- modifiger toutes les dernières vues
+	voir /saison/modif_date.py
