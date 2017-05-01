@@ -6,13 +6,15 @@
 south_park.py v2.1 sur branche master
 
 Bugs connus : 
-
+	- problème de formatage d'au moins un épisode (mais lequel ?)
+		nb_vue = 'False'
+		
 """
 
 import saisons # je ne suis pas sur que ça serve à quelque chose
 import os
-import csv
 import configparser
+import datetime
 from random import randint
 from subprocess import Popen # je ne m'en sers pas encore, c'est pour l'ouverture automatique du fichier
 
@@ -51,7 +53,9 @@ while reponse == 'n':
 	if nb_vues == 0:
 		print("Vous n'avez pas encore vu cet épisode.\n")
 	else:
-		print("Vous avez déjà vu cet épisode {} fois\n".format(nb_vues))
+		derniere_vue = saison_ini.get(chemin_episode,'derniere_vue')
+		print("Vous avez déjà vu cet épisode {} fois".format(nb_vues))
+		print("La dernière fois remonte au {}.\n".format(derniere_vue))
 
 	# on veut tester maintenant si l'épisode se trouve dans un arc narratif
 	# on charge la variable double de l'épisode sélectionné
@@ -153,5 +157,27 @@ while reponse == 'n':
 		print("Veuillez entrer o ou n\n")
 		reponse = input("Cela vous convient-il ? o/n\n")
 		reponse = reponse.lower()
+		
+rep = input("Voulez-vous enregistrer ce visionnage dans la base de données ? o/n")
+rep = rep.lower()
+while rep != 'o' and rep != 'n':
+	print("Je ne comprends pas.")
+	print("Veuillez entrer o ou n\n")
+	rep = input("Voulez-vous enregistrer ce visionnage dans la base de données ? o/n")
+	rep = rep.lower()
+if rep == 'o':
+	nb_vues += 1
+	nb_vues = str(nb_vues)
+	saison_ini.set(chemin_episode,'nb_vues',nb_vues)
+	now = datetime.datetime.now()
+	jour = str(now.day)
+	mois = str(now.month)
+	annee = str(now.year)
+	derniere_vue = jour + '/' + mois + '/' + annee
+	saison_ini.set(chemin_episode,'derniere_vue',derniere_vue)
+	saison_ini.write(open(saison,'w'))
+	print("C'est enregistré.")
+else:
+	print("Très bien. Ce ne sera pas enregistré")
 
 print("\nBon visionnage ;-)")

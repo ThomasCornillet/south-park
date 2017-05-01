@@ -24,11 +24,11 @@ Tâches
 - afficher un avertissement en cas de double ou triple épisode
 - si arc narratif, affichage de la place de l'épisode dans l'arc
 - afficher le nombre de vue
+- incrémenter le nombre de vue
+- ajouter la date du dernier visionnage
 
 Tâches à venir
 --------------
-- incrémenter le nombre de vue
-- ajouter la date dans la variable dernière vue du csv
 - lancer l'épisode directement via l'application
 	à partir de vlc dans un premier temps
 	puis à partir du lecteur par défaut de l'ordinateur
