@@ -13,6 +13,7 @@ Quatrième test 	: créer et remplire automatiquement 20.ini	: OK
 Attention, problème avec l'épisode "1%" de le saison 15, le '%' faisant planter configparser
 	du coup, il faut l'enlever et l'ajouter manuellement
 	sinon, ça fonctionne
+	il faut penser ensuite à l'appeler "1%%" pour qu'il n'y ait pas de problème avec la lecture de configparser après
 
 """
 
@@ -80,7 +81,7 @@ while a <= nb_saisons:
 
 	# on écrit le fichier
 	nom_ini = a
-	if a <10:
+	if a < 10:
 		nom_ini = str(nom_ini)
 		nom_ini = '0' + nom_ini + ".ini"
 	else:
