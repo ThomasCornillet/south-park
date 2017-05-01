@@ -1,6 +1,25 @@
-Cette classe regroupe des fichiers csv pour chaque saison de South Park.
-Le csv est simple, 3 colonnes : numéro de l'épisode, nom de l'épisode (en anglais), chemin de l'épisode.
+Cette classe regroupe des fichiers ini pour chaque saison de South Park.
 
-L'idée est d'ajouter pour chaque ordinateur le chemin spécifique de l'épisode pour l'ouvrire dans l'application.
+Ces fichiers sont composés des informations sur la saison dans ['saison], et des episodes dans ['episode_n'] (avec n numéro épisode).
 
-On pourra y ajouter d'autres informations, comme le fait qu'il s'agisse d'un double ou triple épisode, un rapide résumé pour voir si l'on a déjà vu récemment l'épisode, un compteur de vu pour inclure dans l'aléatoire
+[saison]
+num_saison = 		# n° de la saison
+nb_episodes =		# nombre d'épisodes de la saison 
+chemin = 			# chemin de la saison sur la machine
+
+[episode_]
+nom_episode = 		# nom de l'épisode
+nb_vues = 			# nombre de vue
+derniere_vue = 		# date du dernier visionage
+double = 			# True si l'épisode se trouve dans un arc narratif
+chemin = 			# chemin de l'épisode sur la machine
+
+L'idée est d'ajouter pour chaque ordinateur le chemin spécifique de la saison et de l'épisode pour l'ouvrir dans l'application.
+
+Cette classe contient également trois fichiers d'automatisation:
+	csvtonini.py
+		passage des csv (autres branches) aux ini
+	modif_date.py
+		modifier toutes les derniere_vue
+	modif_nb_vues.py
+		modifier toutes les nb_vues
