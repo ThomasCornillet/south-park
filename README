@@ -1,5 +1,5 @@
-south_park.py
-=============
+south_park.py v2.1
+==================
 
 Application permettant de sélectionner de manière aléatoire un épisode de South Park.
 
@@ -37,3 +37,7 @@ Modifications envisagées
 ------------------------
 - refonte du code avec ajout d'une classe "méthodes de sélection"
 - passer en graphique
+
+Passage des csv aux ini
+-----------------------
+- voir ./saisons/csvtoini.py
